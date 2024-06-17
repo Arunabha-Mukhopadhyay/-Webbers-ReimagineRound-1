@@ -77,24 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
     image1.style.opacity = 1;
     image2.style.opacity = 0;
   });
-
-
-  const searchIcon = document.querySelector(".search");
-  const searchInput = document.querySelector("input[type='text']");
-
-  searchIcon.addEventListener("click", function() {
-    const isVisible = searchInput.style.display !== "none";
-    if (!isVisible) {
-      searchInput.style.display = "inline-block";
-      gsap.to(searchInput, { opacity: 1, right: `calc(-${searchInput.offsetWidth}px + 20px)`, duration: 0.5 });
-    } else {
-      gsap.to(searchInput, { opacity: 0, duration: 0.5, onComplete: () => {
-        searchInput.style.display = "none";
-      }});
-    }
-  });
-
-  searchIcon.style.cursor = "pointer"; 
 });
 
 
@@ -143,4 +125,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const contentWrapper = document.querySelector('.content-wrapper');
   observer.observe(contentWrapper);
+});
+
+
+var swiper = new Swiper(".mySwiper", {
+  speed: 600,
+  parallax: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const page5 = document.querySelector('#page5');
+  const textiles = document.querySelector('#textiles');
+
+  page5.addEventListener('mouseenter', () => {
+      textiles.classList.add('animate');
+  });
 });
