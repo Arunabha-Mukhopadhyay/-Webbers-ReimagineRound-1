@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
   <div id="main">
@@ -19,12 +20,12 @@
     <div id="page1">
       <nav>
         <div id="nav-left">
-          <img src="https://mcdindia.com/wp-content/uploads/2020/04/logo-symbol.svg" alt="">
+          <img href="#page1" src="https://mcdindia.com/wp-content/uploads/2020/04/logo-symbol.svg" alt="">
           <a href="#page2">About Us</a>
           <a href="#page4">Menu</a> 
           <a href="#page3">Happy Meal</a>
           <a href="#">News</a>
-          <a href="#">Mc Delivery</a>
+          <a href="#page5">Mc Delivery</a>
           <img class="menu" src="icons8-menu-256.png" alt="">
         </div>
         <div id="nav-right">
@@ -78,8 +79,38 @@
     <div id="page4">
       <h1>Our Menu :</h1>
       <img class="svgees" src="m.svg" alt="">
+    
+      <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+        <div class="parallax-bg" style="background-image: url(https://swiperjs.com/demos/images/nature-1.jpg);" data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Slide 1</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Slide 2</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="title" data-swiper-parallax="-300">Slide 3</div>
+            <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+            <div class="text" data-swiper-parallax="-100">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
-
+    
     <div id="page3">
       <div class="media-container ">
         <img src="happy-meal-logo2x-compressor.png" alt="Image">
@@ -109,6 +140,21 @@
         </div>
       </div>
     </div>
+
+    <div id="page5">
+      <div id="textiles">
+        <img src="mcdelivery.gif" alt="">
+        <h1>Order for Home-Delivered Smiles</h1>
+        <p class="colort">We deliver to your doorstep</p>
+        <p>McDelivery allows you to experience delicious McDonald’s food from the comfort of your sofa at home or cubicle in office. All orders are delivered quickly and efficiently, allowing you the peace of mind to know that smiles-inducing food is never too far.</p>
+        <button>Order Now</button>
+      </div>
+      
+      <div id="imagi">
+        <img src="mc-delivery.jpg" alt="">
+      </div>
+    </div>
+    
 
     <div id="footer-section">
       <div class="first1">
@@ -143,6 +189,7 @@
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
