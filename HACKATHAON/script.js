@@ -128,19 +128,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-var swiper = new Swiper(".mySwiper", {
-  speed: 600,
-  parallax: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const page5 = document.querySelector('#page5');
   const textiles = document.querySelector('#textiles');
@@ -149,3 +136,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       textiles.classList.add('animate');
   });
 });
+
+
+
+
