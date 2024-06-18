@@ -23,7 +23,7 @@ html,body{
 #page1 {
   padding-top: 60px;
   position: sticky;
-  background: linear-gradient(to bottom right, black, black,black, #424040,black,black, black);
+  background: linear-gradient(to bottom right, black, black, #424040,black, black);
   height: 100vh;
   width: 100%;
 }
@@ -379,7 +379,7 @@ h1 {
 
 
 #page4 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #0e0e0e;
   margin-top: -1.5%;
@@ -397,47 +397,62 @@ h1 {
   margin-right: 0; 
   margin-top:-12%;
 }
-.swiper {
-  width: 60%;
-  height: 70%;
-  background: #000;
-  top: -40%;
-  left: -10%;
-}
-
-.swiper-slide {
-  font-size: 18px;
-  color: #fff;
-  -webkit-box-sizing: border-box;
+#menu-wrapper{
+  margin-top: -24%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap; 
+  overflow-x: auto; 
+  padding: 20px;
+  gap: 20px; 
+  width: 80%;
   box-sizing: border-box;
-  padding: 40px 60px;
+}
+.menu-card {
+  flex: 0 0 auto; /* Prevents cards from shrinking */
+  height: 50vh;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: #fff; /* Added to ensure visibility of content */
+  color: #000; 
+}
+.menu-card > *{
+  margin-bottom: 5%;
+}
+.menu-card:hover {
+  transform: scale(1.05);
+}
+.menu-card img {
+  width: 100%;
+  height: 45%;
+  border-radius: 5px;
+}
+.menu-details {
+  margin-top: 10px;
+}
+.menu-details h3, .menu-details p, .menu-details span {
+  
+  margin-bottom: 5%;
+}
+.order-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.order-btn:hover {
+  background-color: #45a049;
 }
 
-.parallax-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 130%;
-  height: 100%;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide .title {
-  font-size: 41px;
-  font-weight: 300;
-}
-
-.swiper-slide .subtitle {
-  font-size: 21px;
-}
-
-.swiper-slide .text {
-  font-size: 14px;
-  max-width: 400px;
-  line-height: 1.3;
-}
 
 
 
@@ -461,7 +476,7 @@ h1 {
   gap: 20px;
   align-items: center;
   margin-bottom: 20px;
-  margin-top: -10%;
+  margin-top: -5%;
   transition: all 1s;
   transform: translateX(-100%);
 }
@@ -495,7 +510,7 @@ h1 {
   padding: 10px;
 }
 .content img {
-  max-width: 80%;
+  max-width: 95%;
   height: auto;
 }
 .content h2 span {
