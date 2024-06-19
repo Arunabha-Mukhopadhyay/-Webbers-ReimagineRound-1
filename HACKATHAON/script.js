@@ -139,4 +139,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 
-
+document.getElementById('burger-checkbox').addEventListener('change', function() {
+  const menu = document.getElementById('menu-r');
+  if (this.checked) {
+    menu.style.display = 'block';
+  } else {
+    menu.style.display = 'none';
+  }
+});
