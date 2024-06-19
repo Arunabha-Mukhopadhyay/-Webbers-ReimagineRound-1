@@ -18,6 +18,7 @@
   <div id="main">
 
     <div id="page1">
+      
       <nav>
         <div id="nav-left">
           <img href="#page1" src="https://mcdindia.com/wp-content/uploads/2020/04/logo-symbol.svg" alt="">
@@ -26,7 +27,14 @@
           <a href="#page3">Happy Meal</a>
           <a href="#">News</a>
           <a href="#page5">Mc Delivery</a>
-          <img class="menu" src="icons8-menu-256.png" alt="">
+
+          <input id="burger-checkbox" type="checkbox" />
+          <label class="burger" for="burger-checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
         </div>
         <div id="nav-right">
           <input type="text" placeholder="Search">
@@ -216,6 +224,18 @@
       </div>
     </div>
 
+  </div>
+
+  <div id="menu-r" onclick="onClickMenu()">
+    <ul>
+      <li>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a> 
+        <a href="#">Happy Meal</a>
+        <a href="#">News</a>
+        <a href="#">Mc Delivery</a>
+      </li>
+    </ul>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
