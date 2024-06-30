@@ -34,7 +34,7 @@ nav {
   position: fixed; 
   top: 0; 
   left: 0; 
-  z-index: 100;
+  z-index: 10000;
   align-items: center;
   border-bottom: 1px solid whitesmoke;
   justify-content: space-between;
