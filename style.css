@@ -555,9 +555,9 @@ h1 {
   flex-direction: column; 
   justify-content: center;
   align-items: center; 
-  opacity: 0;
+/*   opacity: 0;
   transform: translateX(-100%);
-  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s; */
 }
 #textiles > * {
   margin-bottom: 5%; /* Add a 5% bottom margin to all children */
@@ -566,10 +566,10 @@ h1 {
   height: auto;
   width: 90px;
 }
-#textiles.animate {
+/* #textiles.animate {
   opacity: 1;
   transform: translateX(0%);
-}
+} */
 #textiles h1 {
   font-family: "Great Vibes", cursive;
   font-size: 36px;
@@ -594,7 +594,7 @@ h1 {
   border: none;
   cursor: pointer;
 }
-@keyframes anime {
+/* @keyframes anime {
   0% {
     transform: translateX(-100%);
   }
@@ -602,7 +602,7 @@ h1 {
     transform: translateX(0%);
   }
 }
-
+ */
 
 
 
