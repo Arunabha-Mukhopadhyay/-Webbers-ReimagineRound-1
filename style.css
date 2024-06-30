@@ -13,7 +13,6 @@
   font-family: sans-serif;
 }
 html,body{
-  position: relative;
   height: 100%;
   width: 100%;
 }
@@ -22,7 +21,7 @@ html,body{
 
 #page1 {
   padding-top: 60px;
-  position: sticky;
+  position: relative;
   background: linear-gradient(to bottom right, black, black, #424040,black, black);
   height: 100vh;
   width: 100%;
@@ -256,7 +255,7 @@ input[type="text"]:focus {
 #page2 {
   min-height: 100vh;
   width: 100%;
-  z-index: 99;
+  z-index: 9;
   background-color: #070707;
   padding-top: 40px; 
 }
@@ -277,6 +276,7 @@ h1 {
 .container {
   display: flex;
   justify-content: flex-start; 
+  z-index: 9;
   align-items: flex-start; 
   padding: 40px;
 }
@@ -467,7 +467,6 @@ h1 {
   background-repeat: no-repeat;
   height: 100vh; 
   width: 100%; 
-  z-index: 99;
   display: flex;
   align-items: center;
   padding: 70px;
@@ -476,6 +475,7 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  z-index: 9;
   align-items: center;
   margin-bottom: 20px;
   margin-top: -5%;
@@ -496,6 +496,7 @@ h1 {
 .content-wrapper {
   display: flex;
   flex-wrap: wrap;
+  z-index: 9;
   justify-content: center;
   gap: 20px;
   width: 100%;
@@ -504,6 +505,7 @@ h1 {
 }
 .content {
   display: flex;
+  z-index: 9;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -551,6 +553,7 @@ h1 {
 #textiles {
   height: 100%;
   width: 30%;
+  z-index: 9;
   background-color: rgb(10, 10, 10);
   padding: 40px;
   display: flex;
