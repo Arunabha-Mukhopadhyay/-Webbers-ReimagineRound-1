@@ -138,6 +138,21 @@ document.addEventListener("DOMContentLoaded", function() {
 // });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        observer.unobserve(entry.target); 
+      }
+    });
+  });
+
+  const contentWrapper = document.querySelector('#textiles');
+  observer.observe(contentWrapper);
+});
+
+
 
 
 document.getElementById('burger-checkbox').addEventListener('change', function() {
