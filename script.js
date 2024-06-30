@@ -128,14 +128,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  const page5 = document.querySelector('#page5');
-  const textiles = document.querySelector('#textiles');
+// document.addEventListener('DOMContentLoaded', (event) => {
+//   const page5 = document.querySelector('#page5');
+//   const textiles = document.querySelector('#textiles');
 
-  page5.addEventListener('mouseenter', () => {
-      textiles.classList.add('animate');
-  });
-});
+//   page5.addEventListener('mouseenter', () => {
+//       textiles.classList.add('animate');
+//   });
+// });
 
 
 
