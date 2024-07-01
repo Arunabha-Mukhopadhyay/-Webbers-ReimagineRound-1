@@ -430,6 +430,7 @@ h1 {
 .menu-card img {
   width: 100%;
   height: 35%;
+  object-fit: cover;
   border-radius: 5px;
 }
 .menu-details {
